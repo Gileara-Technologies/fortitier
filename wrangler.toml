@@ -1,8 +1,8 @@
 name = "fortitier"
-compatibility_date = "2024-09-23"
-compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2025-05-05"
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
 main = ".open-next/worker.js"
-assets = { directory = ".open-next/assets" }
+assets = { directory = ".open-next/assets", binding = "ASSETS" }
 
 [observability]
 enabled = false
