@@ -1,0 +1,19 @@
+name = "fortitier"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+main = ".open-next/worker.js"
+assets = { directory = ".open-next/assets" }
+
+[observability]
+enabled = false
+
+[observability.logs]
+enabled = true
+persist = true
+invocation_logs = true
+
+# Non-secret environment variables only.
+# Secrets (RESEND_API_KEY, etc.) go via `wrangler secret put NAME`.
+# See docs/SECRETS.md.
+[vars]
+CONTACT_EMAIL = "info@fortitier.com"

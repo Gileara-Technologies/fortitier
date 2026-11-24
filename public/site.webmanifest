@@ -1,0 +1,17 @@
+{
+  "name": "Fortitier Logistics",
+  "short_name": "Fortitier",
+  "description": "Ghanaian bulk fuel haulage — safe, accountable, on time.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3B1902",
+  "icons": [
+    {
+      "src": "/brand/fortitier-logo-icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "fortitier",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:cf": "npx @opennextjs/cloudflare build",
+    "preview": "npm run build:cf && npx @opennextjs/cloudflare preview",
+    "deploy:worker": "npm run build:cf && npx @opennextjs/cloudflare deploy",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "secrets:scan": "node scripts/scan-secrets.mjs",
+    "film": "node scripts/build-film.mjs",
+    "film:placeholder": "node scripts/build-film.mjs --placeholder"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.6",
+    "@opennextjs/cloudflare": "^1.20.2",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.187.0",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.2",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "lenis": "^1.3.27",
+    "next": "^15.5.4",
+    "postprocessing": "^6.39.6",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-icons": "^5.6.0",
+    "tailwind-merge": "^3.5.0",
+    "three": "^0.187.0",
+    "zod": "^3.25.76"
+  }
+}
